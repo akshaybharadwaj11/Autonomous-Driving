@@ -9,3 +9,5 @@
 * Petr/PetrV2 - [link](https://github.com/megvii-research/PETR)
 * BevFormer - [link](https://github.com/fundamentalvision/BEVFormer)
 * Waabi - [link](https://waabi.ai/detra/)
+* EmerNerf - [link](https://github.com/NVlabs/EmerNeRF)
+* 3D Occupancy - [link](https://github.com/NVlabs/FB-BEV)
