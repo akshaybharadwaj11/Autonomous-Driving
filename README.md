@@ -11,8 +11,7 @@ This repository contains Jupyter notebooks that demonstrate various perception m
   - [Depth Estimation](#depth-estimation)
   - [Bird's Eye View Representation](#birds-eye-view-representation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
@@ -24,26 +23,50 @@ Autonomous driving systems rely on various perception modules to understand the 
 
 ## Installation
 
+### Using PIP
 To run the notebooks in this repository, you need to have Python and Jupyter Notebook installed. You can install the required dependencies using `pip`:
 
 ```bash
 pip install -r requirements.txt
 ```
 
+### Using Conda Environment
+```
+conda create --name autonomous-driving-env python=3.10
+conda activate autonomous-driving-env
+pip install -r requirements.txt
+```
+
 ## Notebooks
 ### Lane Line Detection
-This notebook demonstrates how to detect lane lines on the road using computer vision techniques. It covers preprocessing steps, edge detection, and applying a Hough Transform to identify lane lines.
+This notebook demonstrates how to detect lane lines on the road using computer vision techniques. In this notebook we use transfer learning to train two state-of-the-art(SOTA) deep learning models like ResNet backbone model and  Vision Transformer model to detect lanelines in an image.
 
-Notebook: lane_line_detection.ipynb
+Notebook: Laneline Detection.ipynb
 
 ### Depth Estimation
-This notebook explores depth estimation using stereo vision and monocular depth estimation methods. It includes both traditional computer vision approaches and deep learning-based models.
+This notebook explores depth estimation using monocular depth estimation methods. It uses the current SOTA depth estimation deep learning-based model - Depth AnythingV2 to obtain per pixel depth from an image. 
 
-Notebook: depth_estimation.ipynb
+Notebook: Monocular_Depth_Estimation_Using_DepthAnythingV2.ipynb
 
 ### Bird's Eye View Representation
-This notebook shows how to transform the camera view to a bird's eye view (top-down perspective) to get a better understanding of the vehicle's surroundings. This transformation is useful for path planning and obstacle detection.
+This notebook shows how to transform the camera view to a bird's eye view (top-down perspective) to get a better understanding of the vehicle's surroundings. This transformation is useful for path planning and Occupancy detection.
 
-Notebook: birds_eye_view_representation.ipynb
+Notebook: BEV_transformation.ipynb
+
+
+## Usage
+1. Clone the repository:
+
+```
+git clone https://github.com/akshaybharadwaj11/Autonomous-Driving.git
+cd Autonomous-Driving
+```
+
+2. Install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
 
 
